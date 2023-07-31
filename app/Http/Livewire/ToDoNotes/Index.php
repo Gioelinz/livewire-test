@@ -33,8 +33,9 @@ class Index extends Component
         ]);
     }
 
-    public function delete(toDoNote $toDoNote)
+    public function delete($id)
     {
+        $toDoNote = toDoNote::find($id);
         $toDoNote->delete();
     }
 

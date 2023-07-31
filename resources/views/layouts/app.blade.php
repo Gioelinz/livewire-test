@@ -22,6 +22,7 @@
     @yield('content')
 
     @livewireScripts
+    @stack('scripts')
 </body>
 
 </html>
